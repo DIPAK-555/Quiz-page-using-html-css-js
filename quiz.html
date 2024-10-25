@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENERAL QUIZ</title>
+</head>
+<style>
+    body {
+        font-family:cursive;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    header {
+        
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color:#528eb3 ;
+        margin: 10px auto;
+        padding: 0px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 40%;
+        height: 20%;
+        background-color: #ffe6b3;
+
+    }
+
+    .all {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color:#528eb3;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+
+    }
+
+    /* Styling each question */
+    .all div {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color:		
+        	
+      #ffe6b3;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    /* Adding box-shadow on hover using the pseudo-class */
+    .all div:hover {
+        box-shadow: 0 10px 20px rgba(8, 8, 8, 0.9);
+   
+    }
+
+
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    #submit {
+        padding: 10px 20px;
+       
+        background-color: #528eb3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #clear {
+        padding: 10px 20px;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    
+    #show{
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color:#528eb3;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Courier New', Courier, monospace;
+        font-size:20px;
+        
+    }
+
+    .buttons-container{
+        text-align: center;
+        padding: 20px;
+
+    }   
+</style>
+
+<body>
+    <header>
+    <h1>DSA GENERAL KNOWLEDGE</h1>
+    <form id="my_form">
+        <div class="all">
+
+            <div id="que1">
+                <p>Which of the following data structures uses LIFO (Last In, First Out) principle?</p>
+                <input type="radio" name="Q1" value="a"> a) Queue<br>
+                <input type="radio" name="Q1"value="b"> b) Stack<br>
+                <input type="radio" name="Q1"value="c"> c) Linked List<br>
+                <input type="radio" name="Q1"value="d"> d) Binary Tree
+            </div>
+
+            <div id="que2">
+                <p>What is the time complexity of inserting an element at the beginning of a linked list? </p>
+                <input type="radio" name="Q2"value="a"> a) O(n)<br>
+                <input type="radio" name="Q2"value="b"> b) O(log n)<br>
+                <input type="radio" name="Q2"value="c"> c) O(1)<br>
+                <input type="radio" name="Q2"value="d"> d) O(n log n)
+
+            </div>
+            <div id="que3">
+                <p>Which of the following sorting algorithms has the worst-case time complexity of O(n^2)?</p>
+                <input type="radio" name="Q3"value="a">a) Quick Sort<br>
+                <input type="radio" name="Q3"value="b">b) Merge Sort<br>
+                <input type="radio" name="Q3"value="c">c) Bubble Sort<br>
+                <input type="radio" name="Q3"value="d">d) Heap Sort
+
+            </div>
+            <div id="que4">
+                <p>What data structure is used for implementing recursion?</p>
+                <input type="radio" name="Q4" value="a">a) Queue<br>
+                <input type="radio" name="Q4"value="b">b) Stack<br>
+                <input type="radio" name="Q4"value="c">c) Tree<br>
+                <input type="radio" name="Q4"value="d">d) Graph
+
+            </div>
+            <div id="que5">
+                <P>What is the time complexity of binary search?</p>
+                <input type="radio" name="Q5" value="a">a) O(n)<br>
+                <input type="radio" name="Q5" value="b">b) O(log n)<br>
+                <input type="radio" name="Q5" value="c">c) O(n log n)<br>
+                <input type="radio" name="Q5" value="d">d) O(n^2)
+
+            </div>
+            <div id="que6">
+                <p>Which of the following operations on a Binary Search Tree (BST) has a time complexity of O(h) where
+                    "h" is the height of the tree?</p>
+                <input type="radio" name="Q6" value="a">a) Insertion<br>
+                <input type="radio" name="Q6" value="b">b) Deletion <br>
+                <input type="radio" name="Q6" value="c">c) Search<br>
+                <input type="radio" name="Q6" value="d">d) All of the above
+
+            </div>
+            <div id="que7">
+                <p>Which data structure is most efficient for finding the shortest path in a graph? </p>
+                <input type="radio" name="Q7" value="">a) Stack<br>
+                <input type="radio" name="Q7" value="">b) Priority Queue<br>
+                <input type="radio" name="Q7" value="">c) Binary Search Tree<br>
+                <input type="radio" name="Q7" value="">d) Hash Table
+
+            </div>
+            <div id="que8">
+                <p>Which of the following algorithms is NOT used for solving the shortest path problem?</p>
+                <input type="radio" name="Q8" value="a">a) Dijkstra's Algorithm<br>
+                <input type="radio" name="Q8" value="b">a) Dijkstra's Algorithm<br>
+                <input type="radio" name="Q8" value="c">c) Prim’s Algorithm<br>
+                <input type="radio" name="Q8" value="d">d) Bellman-Ford Algorithm
+
+            </div>
+            <div id="que9">
+                <p>Which traversal technique in a Binary Tree visits the root node after visiting its left and right
+                    subtrees?</p>
+                <input type="radio" name="Q9" value="a">a) In-order<br>
+                <input type="radio" name="Q9" value="b">b) Pre-order<br>
+                <input type="radio" name="Q9" value="c">c) Post-order<br>
+                <input type="radio" name="Q9" value="d">d) Level-order
+
+            </div>
+            <div id="que10">
+                <p>What is the best-case time complexity of the Merge Sort algorithm?</p>
+                <input type="radio" name="Q10" value="a">a) O(n log n)<br>
+                <input type="radio" name="Q10" value="b">b) O(n^2)<br>
+                <input type="radio" name="Q10" value="c">c) O(log n)<br>
+                <input type="radio" name="Q10" value="d">d) O(n)
+
+            </div>
+            <div id="que11">
+                <p>Which of the following data structures can be used to implement a queue?</p>
+                <input type="radio" name="Q11" value="a">a) Stack<br>
+                <input type="radio" name="Q11" value="b">b) Array<br>
+                <input type="radio" name="Q11" value="c">c) Linked List<br>
+                <input type="radio" name="Q11" value="d">d) Both b and c
+
+            </div>
+            <div id="que12">
+                <p>Which graph traversal algorithm uses a queue to explore vertices?</p>
+                <input type="radio" name="Q12" value="a">a) Depth First Search (DFS)<br>
+                <input type="radio" name="Q12" value="b">b) Breadth First Search (BFS)<br>
+                <input type="radio" name="Q12" value="c">c) Prim’s Algorithm<br>
+                <input type="radio" name="Q12" value="d">d) Kruskal’s Algorithm
+
+
+            </div>
+            <div id="que13">
+                <p>In a min-heap, for a node at index 'i', which of the following is the index of its parent?</p>
+                <input type="radio" name="Q13" value="a">a) (i - 1) / 2<br>
+                <input type="radio" name="Q13" value="b">b) (i + 1) / 2<br>
+                <input type="radio" name="Q13" value="c">c) (i * 2) + 1<br>
+                <input type="radio" name="Q13" value="d">d) i / 2
+
+            </div>
+            <div id="que14">
+                <p>Which data structure is the most suitable for implementing an undo mechanism in a text editor?</p>
+                <input type="radio" name="Q14" value="a">a) Queue<br>
+                <input type="radio" name="Q14" value="b">b) Stack<br>
+                <input type="radio" name="Q14" value="c">c) Deque<br>
+                <input type="radio" name="Q14" value="d">d) Array
+
+            </div>
+            <div id="que15">
+                <p>Which of the following is the time complexity for searching an element in a hash table?</p>
+                <input type="radio" name="Q15" value="a">a) O(1)<br>
+                <input type="radio" name="Q15" value="b">b) O(log n)<br>
+                <input type="radio" name="Q15" value="c">c) O(n)<br>
+                <input type="radio" name="Q15" value="d">d) O(n^2)
+
+            </div>
+            <div id="que16">
+                <p>Which of the following algorithms is used for finding the Minimum Spanning Tree (MST) of a graph?</p>
+                <input type="radio" name="Q16" value="a">a) Bellman-Ford<br>
+                <input type="radio" name="Q16" value="b">b) Kruskal's Algorithm<br>
+                <input type="radio" name="Q16" value="c">c) Dijkstra's Algorithm<br>
+                <input type="radio" name="Q16" value="d">d) Depth First Search
+
+            </div>
+            <div id="que17">
+                <p>Which data structure is used to detect cycles in a graph? </p>
+                <input type="radio" name="Q17" value="a">a) Stack<br>
+                <input type="radio" name="Q17" value="b">b) Queue<br>
+                <input type="radio" name="Q17" value="c">c) Disjoint Set (Union-Find)<br>
+                <input type="radio" name="Q17" value="d">d) Linked List
+
+            </div>
+            <div id="que18">
+                <p>In a max-heap, what is the position of the largest element?</p>
+                <input type="radio" name="Q18" value="a">a) Leaf Node<br>
+                <input type="radio" name="Q18" value="b">b) Root Node<br>
+                <input type="radio" name="Q18" value="c">c) Left Child<br>
+                <input type="radio" name="Q18" value="d">d) Right Child
+
+            </div>
+            <div id="que19">
+                <p>Which of the following is an in-place sorting algorithm?</p>
+                <input type="radio" name="Q19" value="a">a) Merge Sort<br>
+                <input type="radio" name="Q19" value="b">b) Quick Sort<br>
+                <input type="radio" name="Q19" value="c">c) Heap Sort<br>
+                <input type="radio" name="Q19" value="d">d) Both b and c
+
+            </div>
+            <div id="que20">
+                <p>Which of the following is the most efficient data structure for implementing a priority queue?</p>
+                <input type="radio" name="Q20" value="a">a) Binary Search Tree<br>
+                <input type="radio" name="Q20" value="b">b) Linked List<br>
+                <input type="radio" name="Q20" value="c">c) Binary Heap<br>
+                <input type="radio" name="Q20" value="d">d) Hash Table
+
+            </div>
+        </div>
+        
+        <div class="buttons-container">
+         <input type="submit" id="submit">
+         <button id="clear">Clear</button>
+    </div>   
+    </form>
+   
+
+    <div id="show">
+        <p id="score">SCORE</p>
+        <p id="grade">GRADE</p>
+        
+    </div>
+
+
+    <script>
+
+    </script>
+</header>
+<footer>
+    <marquee behabiour="left" scrollmount="200%">DIPAK@11</marquee>
+</footer>
+</body>
+<script>
+   
+        document.getElementById("my_form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+    
+            let score = 0; // Initialize score
+            const totalQuestions = 20; // Total number of questions
+    
+            // Correct answers for each question
+            const answers = {
+                Q1: "b",
+                Q2: "c",
+                Q3: "c",
+                Q4: "b",
+                Q5: "b",
+                Q6: "d",
+                Q7: "b",
+                Q8: "c",
+                Q9: "c",
+                Q10: "a",
+                Q11: "d",
+                Q12: "b",
+                Q13: "a",
+                Q14: "b",
+                Q15: "a",
+                Q16: "b",
+                Q17: "c",
+                Q18: "b",
+                Q19: "d",
+                Q20: "c"
+            };
+    
+            // Loop through all the questions and check answers
+            for (let i = 1; i <= totalQuestions; i++) {
+                const questionName = "Q"+i;
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+                
+                if (selectedOption && selectedOption.value === answers[questionName]) {
+                    score++; // Increment score if the answer is correct
+                }
+            }
+    
+            // Display score and grade
+            document.getElementById("score").textContent = `YOUR SCORE: ${score}/${totalQuestions}`;
+    
+            // Assigning grade based on the score
+            let grade;
+            const percentage = (score / totalQuestions) * 100;
+    
+            if (percentage >= 90) {
+                grade = "A";
+            } else if (percentage >= 80) {
+                grade = "B";
+            } else if (percentage >= 70) {
+                grade = "C";
+            } else if (percentage >= 60) {
+                grade = "D";
+            } else {
+                grade = "F";
+            }
+    
+            document.getElementById("grade").textContent = `YOUR GRADE: ${grade}`;
+        });
+    
+        // Clear form and reset results
+        document.getElementById("clear").addEventListener("click", function () {
+            document.getElementById("my_form").reset();
+            document.getElementById("score").textContent = "";
+            document.getElementById("grade").textContent = "";
+        });
+    
+</script>
+
+</html>
